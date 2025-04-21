@@ -241,7 +241,6 @@ code는 VSCode를 의미함
 ```bash
 git config --global user.name "id"
 git config --global user.email "id@gmail.com"
-
 ```
 
 ## 2. Git 명령어 실행하기
