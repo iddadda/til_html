@@ -254,11 +254,28 @@ git init
 ```bash
 git status
 ```
+
 - Git에서 **파일 및 폴더 통째**로 추적하기 설정
-`.`은 All을 의미함
+  `.`은 All을 의미함
+
 ```bash
 git add .
 ```
+
+- Git 작업내역 메모하기
+
+```bash
+git commit
+```
+
+- 새로운 작업단위, 즉 브랜치 생성하기
+
+```bash
+git branch header
+git switch header
+```
+
+- 월요일 할거지롱
 
 ## 3. GitHub 관리
 
