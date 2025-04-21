@@ -48,9 +48,13 @@
 - Prettier - Code formatte 로 선택
 ```
 
-### 2.3. Live Serve 셋팅(일부 실행 오류 발견됨)
+### 2.3. Live Server 셋팅(일부 실행 오류 발견됨)
 
-- 파악 후 업데이트 예정
+- 윈도우 검색 > `시스템 환경 변수 편집` 입력 > 환경변수...
+- Adminstrator에 대한 사용자 변수
+  - Path 내용 추가 : `C:\Windows\System32`
+- 시스템 변수
+  - Path 내용 추가 : `C:\Windows\System32`
 
 # WAS(Web Application Server)
 
