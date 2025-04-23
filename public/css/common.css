@@ -1,33 +1,3 @@
-# CSS
-
-- html을 꾸며주기
-- display 중요함
-- position 중요함
-
-## 1. CSS 작성법 3가지
-
-- 작성법 3가지 중에 누가 최족적으로 적용되는가? (누가 힘이 쎈가)
-
-### 1.1. inline 방식
-
-- html 태그에 직접 작성해 주는 방식
-
-### 1.1. link 방식
-
-- file로 작성해서 link하는 방식(경로/파일명.css)
-- css 폴더/common.css 파일을 생성
-
-### 1.1. @import 방식
-
-- css 파일에서 또다른 css 파일을 참조하는 방식
-
-## 2. 모든 태그에 초기화 진행하기
-
-- 웹브라우저마다 기본적인 css는 적용 되어있음
-- 웹브라우저마다 모양이 다르게 보인다.
-- 아래 내용은 기본 css 값으로 추천합니다.
-
-```css
 @charset "utf-8";
 * {
   margin: 0;
@@ -35,17 +5,8 @@
   box-sizing: border-box;
   /* outline-style: none;*/
 }
-```
 
-## 3. 선택하는 법 (selector)
-
-### 1. 태그 선택법
-
--- css/common.css 기본값
-
-```css
 /* 태그선택: 추천하는 각 태그별 기본값 */
-/* 태그 {} */
 a {
   text-decoration: none;
   /* 디자인 보고 수정 */
@@ -64,14 +25,9 @@ body {
   font-size: 1rem;
   /* 디자인보고 수정 */
   color: #000000;
+  /* 글꼴이 필요 함 */
 }
-```
 
-### 2. 클래스 선택법
-
-```css
-.클래스명 {
-}
 .wrap {
   width: 100%;
 }
@@ -136,4 +92,3 @@ body {
   display: flex;
   align-items: center;
 }
-```
