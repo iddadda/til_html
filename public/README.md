@@ -312,7 +312,19 @@ div {
 - body 셋팅을 위한 자료임
 
 ### 6.1. 글꼴 구하기
-- 구글폰트(https://fonts.google.com/)
-- 눈누(https://noonnu.cc/font_page/pick)
-- github(https://github.com/orioncactus/pretendard)
-- 아이콘폰트(https://fontawesome.com/icons)
+
+- `웹폰트`와 `로컬폰트`의 구분 및 이해
+- [구글폰트](https://fonts.google.com/)
+- [눈누](https://noonnu.cc/font_page/pick)
+- [github](https://github.com/orioncactus/pretendard)
+- [아이콘폰트](https://fontawesome.com/icons)
+
+### 6.2. 글꼴 활용하기
+- css/common.css 참조
+
+
+## 7. CSS 살펴보기
+
+- margin
+  - 영역 바깥으로의 여백
+  - 주의사항: margin-top은 오류가 발생할 수 있다.
