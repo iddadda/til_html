@@ -1,4 +1,4 @@
-# CSS
+# CSS 시작하기
 
 - html 을 꾸며주기
 - display 중요함.
@@ -320,8 +320,8 @@ div {
 - [아이콘폰트](https://fontawesome.com/icons)
 
 ### 6.2. 글꼴 활용하기
-- css/common.css 참조
 
+- css/common.css 참조
 
 ## 7. CSS 살펴보기
 
