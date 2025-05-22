@@ -156,9 +156,10 @@ window.addEventListener("load", function () {
     swTour = new Swiper(".sw_tour", {
       slidesPerView: 3,
       spaceBetween: 30,
+      slidesPerGroup: 3,
       navigation: {
-        nextEl: ".sw_tour .swiper-button-next",
-        prevEl: ".sw_tour .swiper-button-prev",
+        nextEl: ".tour_next",
+        prevEl: ".tour_prev",
       },
     });
 
