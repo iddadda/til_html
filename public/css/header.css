@@ -23,10 +23,10 @@
 
   /* margin-top: 30px; */
   /* margin-bottom: 30px; */
-  margin: 20px 0;
+  padding: 20px 0;
 }
 .header_top_down {
-  margin: 0;
+  padding: 0;
 }
 .header_top_left {
   display: flex;
