@@ -4,7 +4,7 @@
 window.addEventListener("DOMContentLoaded", function () {
   // 아래 구문은 heder 변수를 만들고 html (document) 에서 css 선택자로 값을 셋팅
   const header = this.document.querySelector(".header");
-  const header_top = this.document.querySelector(".header_top");
+  const headerTop = this.document.querySelector(".header_top");
   const logo = this.document.querySelector(".logo");
   const search = this.document.querySelector(".search");
   const member = this.document.querySelector(".header_top_right");
@@ -27,7 +27,7 @@ window.addEventListener("DOMContentLoaded", function () {
       eventMenu.style.display = "block";
       // class 제거로 변경
       header.classList.remove("header_down");
-      header_top.classList.remove("header_top_down");
+      headerTop.classList.remove("header_top_down");
       search.classList.remove("search_down");
       member.classList.remove("member_down");
       main.classList.remove("main_fixed");
@@ -36,12 +36,14 @@ window.addEventListener("DOMContentLoaded", function () {
       // 로고를 css 로 제어하겠다.
       logo.style.display = "none";
       eventMenu.style.display = "none";
+
       // class 추가로 변경
-      header.classList.add("header_down");
-      header_top.classList.add("header_top_down");
+      // header.classList.add("header_down");
+
+      headerTop.classList.add("header_top_down");
       search.classList.add("search_down");
       member.classList.add("member_down");
-      main.classList.add("main_fixed");
+      // main.classList.add("main_fixed");
     }
   });
 });

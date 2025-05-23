@@ -38,6 +38,7 @@ body {
 }
 .layout {
   width: 100%;
+  /* 최대 너비 */
   max-width: 1280px;
 
   margin: 0 auto;
@@ -85,27 +86,19 @@ body {
 }
 
 /* 반응형작업 */
-body {
-  background-color: skyblue;
-}
-
-@media screen and (max-width: 1024px) {
-  body {
-    background-color: aqua;
+@media all and (max-width: 1280px) {
+  .layout {
+    max-width: 1024px;
   }
 }
-@media screen and (max-width: 960px) {
-  body {
-    background-color: orange;
+
+@media all and (max-width: 1024px) {
+  .layout {
+    max-width: 760px;
   }
 }
 @media screen and (max-width: 760px) {
-  body {
-    background-color: hotpink;
-  }
-}
-@media screen and (max-width: 640px) {
-  body {
-    background-color: yellowgreen;
+  .layout {
+    max-width: 100%;
   }
 }
