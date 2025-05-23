@@ -2,9 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   outline-style: none;
 }
 
@@ -25,20 +25,20 @@ html {
 
 body {
   width: 100%;
-  font-size: 1rem;
-  /* 디자인 보고 수정 */
-  color: #000000;
   /* 글꼴이 필요로 함. */
   font-family: "Segoe UI", Roboto, Arial, "Noto Sans", sans-serif;
+  font-size: 1rem;
   letter-spacing: 0px;
+  /* 디자인 보고 수정 */
+  color: #000000;
   word-spacing: 0px;
 }
 .wrap {
   width: 100%;
 }
 .layout {
-  max-width: 1280px;
   width: 100%;
+  max-width: 1280px;
 
   margin: 0 auto;
   /* margin-top: 0;
@@ -47,14 +47,46 @@ body {
   margin-right: auto; */
 }
 
-/* 반응형작업 */
-body {
-  background-color: skyblue;
-}
-
 /* header가 fixed가 되면 강제로 padding 넣기 */
 .main_fixed {
   padding-top: 150px;
+}
+
+/* slide 관련 공통 */
+.slide_bt {
+  position: absolute;
+  top: 50%;
+
+  z-index: 100;
+  /* transform: translateY(-50%); */
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.85);
+
+  border: 1px solid #e6e6e6;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.13);
+
+  cursor: pointer;
+}
+
+.slide_bt_left {
+  left: 0;
+  transform: translateX(-50%) translateY(-50%) rotateY(180deg);
+}
+.slide_bt_right {
+  right: 0;
+  transform: translateX(50%) translateY(-50%);
+}
+
+/* Swiper 버튼 비활성시 표현 */
+.swiper-button-disabled {
+  display: none !important;
+}
+
+/* 반응형작업 */
+body {
+  background-color: skyblue;
 }
 
 @media screen and (max-width: 1024px) {
