@@ -27,3 +27,54 @@
 .sw_banner {
   border-radius: 15px;
 }
+
+/* 반응형 코드 */
+.sw_banner_pg {
+  bottom: -25px !important;
+  display: none;
+}
+
+@media all and (max-width: 1024px) {
+  .sw_banner_pg {
+    display: block;
+  }
+  /* 평상시 버튼 모습 */
+  .sw_banner_pg .swiper-pagination-bullet {
+  }
+  /* 포커스시 버튼 모습 */
+  .sw_banner_pg .swiper-pagination-bullet-active {
+    background-color: #000000 !important;
+  }
+
+  .slide_bt {
+    display: none;
+  }
+}
+
+@media all and (max-width: 760px) {
+  .sw_banner {
+    width: 350px;
+  }
+  .sw_banner_pg {
+    bottom: 10px !important;
+  }
+  /* 평상시 버튼 모습 */
+  .sw_banner_pg .swiper-pagination-bullet {
+    width: 4px;
+    height: 4px;
+    background-color: #fff !important;
+    opacity: 0.6;
+  }
+  /* 포커스시 버튼 모습 */
+  .sw_banner_pg .swiper-pagination-bullet-active {
+    width: 6px;
+    height: 6px;
+    background-color: #fff !important;
+    opacity: 1;
+  }
+  @media all and (max-width: 760px) {
+    .sw_banner {
+      width: 350px;
+    }
+  }
+}

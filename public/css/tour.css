@@ -1,6 +1,6 @@
 .tour {
   position: relative;
-  margin-top: 65px;
+  margin-top: 50px;
 }
 
 .section_top {
@@ -147,4 +147,23 @@
 }
 .section_bts > a > img {
   transform: translateY(1px);
+}
+
+/* 반응형 작업 */
+@media all and (max-width: 1024px) {
+  .tour {
+    border-top: 8px solid #f4f4f4;
+    margin-top: 30px;
+    padding-top: 10px;
+  }
+
+  .tour .section_title {
+    font-size: 19px;
+  }
+  .tour .section_desc {
+    font-size: 15px;
+  }
+  .section_category_bts > li > button {
+    padding: 9px 20px;
+  }
 }
