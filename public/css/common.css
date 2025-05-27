@@ -19,6 +19,10 @@ ul {
 }
 html {
   width: 100%;
+  /* 반응형 최소 너비 설정 */
+  min-width: 540px;
+  /* 가로 스크롤바는 UI싱 안 좋음 */
+  overflow-x: hidden;
   /* 디자인 보고 수정 */
   font-size: 12px;
 }
